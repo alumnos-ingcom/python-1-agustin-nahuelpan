@@ -3,8 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-#import pytest
-#from src.ejercicio5 import división_lenta
+from src.ejercicio5 import division_lenta
 
 """
 Se esta probando si la función división lenta devuelve un resultado adecuado para la división de los numero recibidos. 
@@ -17,9 +16,11 @@ def test_division_lenta():
     """
     dividiendo = 86 
     divisor = 7
-    cociente = división_lenta(dividiendo, divisor)
+    cociente = division_lenta(dividiendo, divisor)
     resto = division_lenta(dividiendo, divisor)
-    assert dividiendo % divisor == resto, "El resto que otorga la función es correcto."
-    assert dividiendo // divisor == cociente, "El cociente de la división es correcto."
+    prueba_resto = dividiendo % divisor
+    prueba_cociente = dividiendo // divisor
+    prueba_final = (prueba_cociente, prueba_resto)
+    assert prueba_final == cociente, "El resto y el cociente que otorga la función es correcto."
     
     pass

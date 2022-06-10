@@ -3,8 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-#import pytest
-#from src.ejercicio6 import ordenar_menor_a_mayor ordenar_mayor_a_menor
+from src.ejercicio9 import factores_primos
 
 """
 Describir aquí que es lo que se esta probando.

@@ -3,8 +3,8 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-#import pytest
-#from src.ejercicio6 import ordenar_menor_a_mayor ordenar_mayor_a_menor
+from src.ejercicio6 import ordenar_menor_a_mayor 
+from src.ejercicio6 import ordenar_mayor_a_menor
 
 """
 Este test prueba el orden que devuelve las funciones: ordenar_menor_a_mayor y ordenar_mayor_a_menor.
@@ -21,8 +21,8 @@ def test_ordenar_menor_a_mayor():
     tres = 3
     comparacion = (tres, dos, uno)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
     pass
 
@@ -35,8 +35,8 @@ def test_ordenar_menor_a_mayor():
     tres = 6
     comparacion = (tres, uno, dos)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
     pass
 
@@ -50,8 +50,8 @@ def test_ordenar_menor_a_mayor():
     tres = -3
     comparacion = (dos, tres, uno)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
     pass
 
@@ -64,8 +64,8 @@ def test_ordenar_menor_a_mayor():
     tres = 3
     comparacion = (dos , uno, tres)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
     pass
 
@@ -78,8 +78,8 @@ def test_ordenar_menor_a_mayor():
     tres = 3
     comparacion = (uno , tres, dos)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
     pass
 
@@ -92,8 +92,8 @@ def test_ordenar_menor_a_mayor():
     tres = 3
     comparacion = (uno, dos, tres)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
     pass
 
@@ -106,21 +106,26 @@ def test_ordenar_mayor_a_menor():
     tres = 3
     comparacion = (tres, dos, uno)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
-    def test_ordenar_mayor_a_menor():
+    pass
+    
+def test_ordenar_mayor_a_menor():
     """
-    Primer camino. El orden de salida debería ser (tres, uno, dos) """
+    Primer camino. El orden de salida debería ser (tres, uno, dos)
+    """
     uno = 1
     dos = 2
     tres = 3
     comparacion = (tres, uno, dos)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
-    def test_ordenar_mayor_a_menor():
+    pass
+    
+def test_ordenar_mayor_a_menor():
     """
     Primer camino.El ordem de salida debería ser (dos, tres ,uno)
     """
@@ -129,9 +134,10 @@ def test_ordenar_mayor_a_menor():
     tres = 3
     comparacion = (dos, tres ,uno)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
+    pass
 
 def test_ordenar_mayor_a_menor():
     """
@@ -142,8 +148,8 @@ def test_ordenar_mayor_a_menor():
     tres = 3
     comparacion = (dos , uno, tres)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
     pass
 
@@ -156,8 +162,8 @@ def test_ordenar_mayor_a_menor():
     tres = 3
     comparacion = (uno , tres , dos)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
     pass
 
@@ -170,7 +176,7 @@ def test_ordenar_mayor_a_menor():
     tres = 3
     comparacion = (uno, dos, tres)
     orden = ordenar_menor_a_mayor(uno, dos, tres)
-    assert comparación == orden, "No hay problema con el orden de la tupla."
-    assert isinstance(orden, str)
+    assert comparacion == orden, "No hay problema con el orden de la tupla."
+    assert isinstance(orden, tuple)
     
     pass
