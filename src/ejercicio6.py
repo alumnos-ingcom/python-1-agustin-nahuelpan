@@ -57,4 +57,4 @@ def ordenar_menor_a_mayor(uno, dos, tres):
     pass
 
 if __name__ == "__main__":
-    ordenar_menor_a_mayor(uno, dos. tres)
+    ordenar_menor_a_mayor(uno, dos, tres)

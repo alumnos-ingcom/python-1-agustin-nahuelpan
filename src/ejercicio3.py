@@ -15,7 +15,7 @@ Retornar 1 si el primero es mayor que el segundo
 #poscondiciones:Se retornara un numero.
 
 def compara(numero, otro_numero):
-    Primera = numero + (otro_numero) #Cómo el enunciado decía que necesitaba utilizar sumas y restas decidi sumar ambos numeros al inicio.
+    primera = numero + (otro_numero) #Cómo el enunciado decía que necesitaba utilizar sumas y restas decidi sumar ambos numeros al inicio.
     segunda = primera + (numero) #Vuelvo a sumar los números indendientemente al resultado ya obtenido.
     tercera = primera + (otro_numero)
     if segunda > tercera:  #Si el resultado de la suma de los numeros más el primero es más grande, devuelve que el primero es más grande.

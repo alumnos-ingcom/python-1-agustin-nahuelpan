@@ -7,13 +7,13 @@
 11. Multiplos de
 Escribir una función que indique con True si un número entero es multiplo de otro, utilizando sumas y restas.
 """
-#Precondiciones: debe ser dos numeros.
+#Precondiciones: Deben ser dos numeros enteros.
 #Poscondiciones: Devolvera un valor lógico, o una cadena indicando que es falso.
 
 
 def es_multiplo(numero, multiplo):
     cuenta = 1 #Necesaria para mantener el bucle while.
-    devolver = "False" #A menos que se prueba que el segundo numero es multiplo del primero, la función devolvera que es falso.
+    devolver = False #A menos que se prueba que el segundo numero es multiplo del primero, la función devolvera que es falso.
     while cuenta == 1:
         multiplo = multiplo - numero #Si llego a 0 restando el primer numero al segundo querra decir que este último es multiplo.
         if multiplo == 0:
