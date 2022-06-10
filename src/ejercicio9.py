@@ -20,6 +20,7 @@ def factores_primos(numero):
             primos.append(aumento) #Se agrega a la tupla el numero capaz de hacerlo.
             contador = contador / aumento #Se divide el numero para seguir con la cuenta, pero asegurando que eventualemnte vaya a terminar.
         aumento = aumento + 1 #Progresivamente va aumentando para encontrar a los factores primos.
+    primos = tuple(primos)
     return primos
 
     pass
