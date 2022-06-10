@@ -3,9 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-#import pytest
-
-#from src.ejercicio4 import suma_lenta
+from src.ejercicio4 import suma_lenta
 
 """
 Describir aquí que es lo que se esta probando.

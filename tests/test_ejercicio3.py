@@ -3,8 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-#import pytest
-#from src.ejercicio3 compara
+from src.ejercicio3 import compara
 
 """
 Describir aquí que es lo que se esta probando.

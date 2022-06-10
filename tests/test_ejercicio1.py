@@ -3,8 +3,8 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-#import pytest
-#from src.ejercicio1 import convertir_a_fahrrenheit convertir_a_centigrados
+from src.ejercicio1 import convertir_a_fahrrenheit 
+from src.ejercicio1 import convertir_a_centigrados
 
 """
 Se prueba que la salida de los programas sea un numero.

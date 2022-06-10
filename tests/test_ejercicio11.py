@@ -3,8 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 
-#import pytest
-#from src.ejercicio6 import ordenar_menor_a_mayor ordenar_mayor_a_menor
+from src.ejercicio11 import es_multiplo
 
 """
 Comprueba que devuelve True cuando se introduce los numeros adecuados, y que no lo haga cuando se introducen numero erroneos.
