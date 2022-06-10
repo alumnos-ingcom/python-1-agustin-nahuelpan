@@ -30,16 +30,16 @@ def decimal_a_sexadecimal(numero):
     minutos=0
     segundos=numero
     if numero < 60: #Por si el numero no supera el minuto, se deja un condicional listo para sealar que son segundos.
-        devolver = [grados, minutos, segundos]
+        devolver = (grados, minutos, segundos)
     elif numero > 60:#Si el numero supera el minuto, las operaciones para transformarlo se ponen en marcha.
         minutos = numero // 60
         segundos = numero % 60
         if minutos < 60:
-            devolver = [grados, minutos, segundos]
+            devolver = (grados, minutos, segundos)
         elif minutos > 60: #Por si supera 1 grado.
             grados = minutos // 60
             minutos = minutos % 60
-            devolver = [grados, minutos, segundos]
+            devolver = (grados, minutos, segundos)
     return devolver
     pass 
 

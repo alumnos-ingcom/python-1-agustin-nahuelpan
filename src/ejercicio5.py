@@ -11,7 +11,7 @@ Escribir una función que mediante restas sucesivas, obtenga el valor del cocien
 #Precondiciones: las entradas deben ser numeros; el dividiendo debe ser mayor que el divisor.
 #Poscondiciones: la salida seran dos numeros enteros; 
 
-def división_lenta(dividiendo, divisor):
+def division_lenta(dividiendo, divisor):
     cociente = 0 # El cociente queda establecido como 0 para que el bucle while no tenga problemas.
     resto = 0 #El resto queda establecido desde el inicio como 0 en el caso de que la división sea exacta.
     while dividiendo > divisor:
@@ -24,4 +24,4 @@ def división_lenta(dividiendo, divisor):
     pass
 
 if __name__ == "__main__":
-    división_lenta(dividiendo, divisor)
+    division_lenta(dividiendo, divisor)
