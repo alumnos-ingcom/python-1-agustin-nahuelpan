@@ -12,7 +12,7 @@ Comprueba que devuelve True cuando se introduce los numeros adecuados, y que no 
 
 def test_es_multiplo():
     """
-    Este test comprueba que devuelva el valor True con los numeros adecuados.
+    Este test comprueba que devuelva el valor correcto cuando se introduce un numero que es multiplo de otro, y, por otro lado, un numero que no es multiplo con otro.
     """
     numero = 5
     multiplo = 100

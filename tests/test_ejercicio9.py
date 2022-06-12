@@ -6,19 +6,30 @@
 from src.ejercicio9 import factores_primos
 
 """
-Describir aquí que es lo que se esta probando.
-Tengan en cuenta que el archivo tiene que llamarse igual
-que el archivo a probar agregando antes `test_`
+Prueba si devuelve los factores primos de un numero, y si identifica un numero primo.
 """
 
 
 def test_factores_primos_verdadero():
     """
-    Una breve descripción del caso de prueba aplicado a la función
+    Prueba si devuelve los factores primos de un numero.
     """
     numero = 935
     primos =  factores_primos(numero)
+    resultado = (5, 11)
     assert isinstance(primos, tuple), "Devuleve una tupla."
+    assert resultado == primos, "La función devuelve un resultado verdadero."
     
     pass
 
+def test_factores_primos_verdadero():
+    """
+    Prueba si devuelve los factores primos de un numero.
+    """
+    numero = 2963
+    primos =  factores_primos(numero)
+    resultado = ()
+    assert isinstance(primos, tuple), "Devuleve una tupla."
+    assert resultado == primos, "La función devuelve un resultado verdadero. Identifica cuando un numero es primo."
+    
+    pass

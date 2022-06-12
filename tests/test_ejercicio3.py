@@ -6,15 +6,13 @@
 from src.ejercicio3 import compara
 
 """
-Describir aquí que es lo que se esta probando.
-Tengan en cuenta que el archivo tiene que llamarse igual
-que el archivo a probar agregando antes `test_`
+El test compara si la función puede sealar cuando un numero es más grande, más chico, o igual que otro
 """
 
 
 def test_compara_primero_chico():
     """
-    Una breve descripción del caso de prueba aplicado a la función
+    Prueba si devuelve que el primero es más chico que el segundo.
     """
     numero = 5
     otro_numero = 6
@@ -25,7 +23,7 @@ def test_compara_primero_chico():
 
 def test_compara_primero_grande():
     """
-    Una breve descripción del caso de prueba aplicado a la función
+    Prueba si devuelve que el primero es más grande que el segundo.
     """
     numero = 8
     otro_numero = 6
@@ -36,7 +34,7 @@ def test_compara_primero_grande():
 
 def test_compara_igualdad():
     """
-    Una breve descripción del caso de prueba aplicado a la función
+    Prueba si devuelve que son iguales.
     """
     numero = 6
     otro_numero = 6

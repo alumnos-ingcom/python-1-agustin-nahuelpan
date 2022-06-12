@@ -6,15 +6,13 @@
 from src.ejercicio4 import suma_lenta
 
 """
-Describir aquí que es lo que se esta probando.
-Tengan en cuenta que el archivo tiene que llamarse igual
-que el archivo a probar agregando antes `test_`
+El test prueba si el la función suma correctamente los numeros.
 """
 
 
 def test_suma_lenta_negativos():
     """
-    Una breve descripción del caso de prueba aplicado a la función
+    Prueba si el programa puede sumar numeros negativos.
     """
     numero = -8
     otro_numero = -6
@@ -26,7 +24,7 @@ def test_suma_lenta_negativos():
 
 def test_suma_lenta_positivos():
     """
-    Una breve descripción del caso de prueba aplicado a la función
+    Prueba si el programa puede sumar numeros positivos.
     """
     numero = 7
     otro_numero = 15

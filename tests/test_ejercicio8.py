@@ -6,9 +6,7 @@
 from src.ejercicio8 import es_primo
 
 """
-Describir aquí que es lo que se esta probando.
-Tengan en cuenta que el archivo tiene que llamarse igual
-que el archivo a probar agregando antes `test_`
+Prueba si la función es capaz de reconocer un numero palindromo de uno que no lo es.
 """
 
 

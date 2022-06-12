@@ -6,14 +6,12 @@
 from src.ejercicio2 import signo
 
 """
-Describir aquí que es lo que se esta probando.
-Tengan en cuenta que el archivo tiene que llamarse igual
-que el archivo a probar agregando antes `test_`
+Este test probara si la función devuelve el resultado esperado segun los numeros que se le ingresen.
 """
 
 def test_signo_neutro():
     """
-    Una breve descripción del caso de prueba aplicado a la función
+    Prueba si devuelve que el numero ingresado es 0.
     """
     numero = 0
     prueba = "El numero ingresado es 0"
@@ -25,7 +23,7 @@ def test_signo_neutro():
 
 def test_signo_negativo():
     """
-    Una breve descripción del caso de prueba aplicado a la función
+    Prueba si devuelve que el numero es negativo.
     """
     numero = -2
     prueba = "El numero ingresado negativo"
@@ -37,7 +35,7 @@ def test_signo_negativo():
 
 def test_signo_positivo():
     """
-    Una breve descripción del caso de prueba aplicado a la función
+    Prueba si el numero ingresado es positivo.
     """
     numero = 84
     prueba = "El numero ingresado es positivo"
