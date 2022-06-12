@@ -20,7 +20,6 @@ def es_palindromo(palindromo):
     largo_de_palindromo = len(palindromo)-1 
     palindromo_prueba = 0
     prueba = 1
-    devolver = False
     while prueba > 0:
         if palindromo[palindromo_prueba] == palindromo[largo_de_palindromo]:
             palindromo_prueba = +1
@@ -28,6 +27,10 @@ def es_palindromo(palindromo):
             if largo_de_palindromo == -1:
                 prueba = 0
                 devolver = True
+        elif palindromo[palindromo_prueba] != palindromo[largo_de_palindromo]:
+            devolver = False
+            prueba = 0
+
     return devolver
 
     pass
