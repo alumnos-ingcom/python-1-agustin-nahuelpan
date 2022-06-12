@@ -15,6 +15,8 @@ def convertir_a_fahrrenheit(centigrados):
     """Esta función convierte grados centigrados a grados fahrrenheit."""
     return salida
     
+    pass
+    
 def convertir_a_centigrados(fahrrenheit):
     salida = (fahrrenheit -32)/1.8
     """Esta función convierte grados fahrrenhiet a grados centigrados."""
