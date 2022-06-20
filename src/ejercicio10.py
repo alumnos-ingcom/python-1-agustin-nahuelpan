@@ -6,10 +6,26 @@
 """
 10. Palíndromo
 Escribir una función que indique con True si una palabra o frase ingresada se trata de un palindromo. Palíndromo, es si se lee igual de derecha a izquierda que de izquierda a derecha.
-Precondiciones: debe recibir una cadena o frase almacenada.
-Poscondiciones: Devuelve true o false dependiendo si es o no un palindromo.
 """
+
+def principal():
+    """
+    Esta función se encarga de pedir los datos y devolver si la cadena ingresada es o no es un
+    palindromo.
+    Precondiciones: debe recibir una cadena o frase almacenada.
+    Poscondiciones: Devuelve true o false dependiendo si es o no un palindromo.
+    """
+    print ("Esta funcion devolvera True si la cadena ingresada es un palindromo, o False si no lo es.")
+    palindromo = input("Ingrese una cadena para saber si es palindromo: ")
+    devolver = es_palindromo(palindromo)
+    print (f"El resultado con la operación realizada con la cadena {palindromo}, es {devolver}. ")
+
 def es_palindromo(palindromo):
+    """
+    Esta función revisa que la cadena ingresada es o no un palindromo.
+    Precondiciones: debe recibir una cadena o frase almacenada.
+    Poscondiciones: Devuelve true o false dependiendo si es o no un palindromo.
+    """
     palindromo = palindromo.lower()
     palindromo = palindromo.replace(" ", "")
     palindromo = palindromo.replace("á", "a")
@@ -30,10 +46,8 @@ def es_palindromo(palindromo):
         elif palindromo[palindromo_prueba] != palindromo[largo_de_palindromo]:
             devolver = False
             prueba = 0
-
     return devolver
 
-    pass
-
 if __name__ == "__main__":
+    principal()
     es_palindromo(palindromo)
