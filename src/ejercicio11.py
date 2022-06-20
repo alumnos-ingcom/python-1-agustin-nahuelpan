@@ -2,17 +2,15 @@
 # Nombre - @agustin-nahuelpan
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-
 """
 11. Multiplos de
 Escribir una función que indique con True si un número entero es multiplo de otro, utilizando
 sumas y restas.
 """
-
 def principal():
     """
     Esta funcion se encarga de pedir los numetos y devolver si uno es multiplo del otro.
-    #Precondiciones: Deben ser dos numeros enteros.
+    Precondiciones: Deben ser dos numeros enteros.
     Poscondiciones: Devolvera un valor lógico, o una cadena indicando que es falso.
     """
     print ("Ingrese un numero y después un segundo numero para verificar si este multiplo.")

@@ -7,23 +7,19 @@
 5. Divisiones
 Escribir una función que mediante restas sucesivas, obtenga el valor del cociente y resto de dos
 números enteros.
-
 """
-
-
 def principal():
     """
     Esta función se encarga de pedir los numeros para la operación, y devolver el resultado.
     Precondiciones: las entradas deben ser numeros; el dividiendo debe ser mayor que el divisor.
     Poscondiciones: la salida seran dos numeros enteros.
     """
-    print ("")
+    print ("Ingrese un dividiendo y un divisor. El dividiendo debe ser más grande que el divisor.")
     dividiendo = int(input("Ingrese el dividiendo: "))
     divisor = int(input("Ingrese el divisor: "))
     cociente, resto = division_lenta(dividiendo, divisor)
     print (f"La división de {dividiendo} y {divisor} deja como resultado un cociente: {cociente}, y un resto igual a {resto}.")
     
-
 def division_lenta(dividiendo, divisor):
     """
     Esta función se encarga de realizar la división y devolver el cociente y el resto.
@@ -37,7 +33,7 @@ def division_lenta(dividiendo, divisor):
             dividiendo = dividiendo - (divisor) #Se realizan las restas sucesivamente mientras el bucle funcione.
             cociente = cociente + 1 #Por cada vez que el divisor resta al dividiendo, el cociente aumenta en 1.
             if dividiendo > divisor: #En el caso de que el resto no sea 0, esta condicional seala cuanto es.
-                resto = -(dividiendo) 
+                resto = dividiendo 
     else:
         while dividiendo > divisor:
             dividiendo = dividiendo - (divisor) #Se realizan las restas sucesivamente mientras el bucle funcione.

@@ -2,12 +2,10 @@
 # Nombre - @agustin-nahuelpan
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-
 """
 10. Palíndromo
 Escribir una función que indique con True si una palabra o frase ingresada se trata de un palindromo. Palíndromo, es si se lee igual de derecha a izquierda que de izquierda a derecha.
 """
-
 def principal():
     """
     Esta función se encarga de pedir los datos y devolver si la cadena ingresada es o no es un
