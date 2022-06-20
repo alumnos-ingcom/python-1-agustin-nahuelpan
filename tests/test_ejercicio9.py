@@ -8,8 +8,6 @@ from src.ejercicio9 import factores_primos
 """
 Prueba si devuelve los factores primos de un numero, y si identifica un numero primo.
 """
-
-
 def test_factores_primos_verdadero():
     """
     Prueba si devuelve los factores primos de un numero.
@@ -19,8 +17,6 @@ def test_factores_primos_verdadero():
     resultado = (5, 11)
     assert isinstance(primos, tuple), "Devuleve una tupla."
     assert resultado == primos, "La función devuelve un resultado verdadero."
-    
-    pass
 
 def test_factores_primos_verdadero():
     """
@@ -31,5 +27,3 @@ def test_factores_primos_verdadero():
     resultado = ()
     assert isinstance(primos, tuple), "Devuleve una tupla."
     assert resultado == primos, "La función devuelve un resultado verdadero. Identifica cuando un numero es primo."
-    
-    pass

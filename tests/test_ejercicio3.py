@@ -8,8 +8,6 @@ from src.ejercicio3 import compara
 """
 El test compara si la función puede sealar cuando un numero es más grande, más chico, o igual que otro
 """
-
-
 def test_compara_primero_chico():
     """
     Prueba si devuelve que el primero es más chico que el segundo.
@@ -19,8 +17,6 @@ def test_compara_primero_chico():
     regreso = compara(numero, otro_numero)
     assert regreso == -1, "El resultado es correcto. El primer número es más chico que el segundo."
     
-    pass
-
 def test_compara_primero_grande():
     """
     Prueba si devuelve que el primero es más grande que el segundo.
@@ -29,8 +25,6 @@ def test_compara_primero_grande():
     otro_numero = 6
     regreso = compara(numero, otro_numero)
     assert regreso == 1, "El resultado es correcto. El segundo número es más chico que el primero."
-    
-    pass
 
 def test_compara_igualdad():
     """
@@ -40,5 +34,3 @@ def test_compara_igualdad():
     otro_numero = 6
     regreso = compara(numero, otro_numero)
     assert regreso == 0, "El resultado es correcto. Los resultados son identicos."
-    
-    pass

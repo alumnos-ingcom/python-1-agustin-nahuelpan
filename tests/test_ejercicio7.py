@@ -9,8 +9,6 @@ from src.ejercicio7 import decimal_a_sexadecimal
 """
 Se prueba la salida de los tres datos: horas, minutos y segundos, convertidos a segundos. Y se prueba un numero siendo convertido a grados, minutos y segundos.
 """
-
-
 def test_sexadecimal_a_decimal():
     """
     Este caso de prueba introduce tres variables de numeros enteros, y espera recibir un numero entero.
@@ -24,8 +22,6 @@ def test_sexadecimal_a_decimal():
     devolver = sexadecimal_a_decimal(horas, minutos, segundos)
     assert isinstance(devolver, int), "La función devuelve un numero entero."
     assert comparacion == devolver, "La función desarrolla bien el calculo."
-    
-    pass
 
 def test_decimal_a_sexadecimal():
     """
@@ -34,5 +30,3 @@ def test_decimal_a_sexadecimal():
     numero = 6584656
     devolver = decimal_a_sexadecimal(numero)
     assert isinstance(devolver, tuple), "La función devuelve uuna tupla."
-    
-    pass

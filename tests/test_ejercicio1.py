@@ -9,8 +9,6 @@ from src.ejercicio1 import convertir_a_centigrados
 """
 Se prueba que la salida de los programas sea el numero correcto.
 """
-
-
 def test_convertir_a_fahrrenheit():
     """
     Revisa que devuelva un numero con coma.
@@ -21,7 +19,6 @@ def test_convertir_a_fahrrenheit():
     assert isinstance(resultado, float), "El resutado es un numero con coma."
     assert comparación == resultado, "El resultado devuelto es el adecuado."
     
-    
 def test_convertir_a_centigrados():
     """
     Revisa que devuelva un numero con coma.
@@ -31,9 +28,6 @@ def test_convertir_a_centigrados():
     resultado = convertir_a_centigrados(numero)
     assert isinstance(resultado, float), "El resutado es un numero con coma."
     assert comparación == resultado, "El numero resultante es correcto."
-    
-    
-    pass
 
 def test_doble():
     """
@@ -45,5 +39,3 @@ def test_doble():
     numero = resultado
     resultado = convertir_a_fahrrenheit(numero)
     assert final == resultado, "El resultado es el mismo que el numero ingresado después de haber sido convertido de centigrados a fahrreinheit, y de fahrreinheit a centigrados."
-    
-    pass
